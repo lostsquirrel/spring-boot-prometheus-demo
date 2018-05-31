@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  prometheus-demo:
+    image: ${VERSIONED_IMAGE}
+    network_mode: host
+    container_name: prometheus-demo
+    environment:
+      - JAVA_OPTS=-Xms128m -Xmx128m
