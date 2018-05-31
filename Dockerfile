@@ -10,5 +10,4 @@ ARG JAR_FILE
 COPY --from=builder /build/${JAR_FILE} app.jar
 RUN bash -c 'touch /app.jar'
 EXPOSE 8080
-ENV JAVA_OPTS=""
-ENTRYPOINT ["java -Djava.security.egd=file:/dev/./urandom -jar /app.jar"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app.jar"]
