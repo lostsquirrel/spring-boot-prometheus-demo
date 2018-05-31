@@ -6,7 +6,7 @@ ifndef REGISTRY
 endif
 
 REGISTRY_NAMESPACE=lisong
-PROJECT_NAME=prometheus-demo
+PROJECT_NAME=spring-boot-prometheus-demo
 VERSION=1.0-SNAPSHOT
 
 IMAGE_TAG=$(VERSION).$(shell git rev-parse --short HEAD)
