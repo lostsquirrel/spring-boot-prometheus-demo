@@ -1,0 +1,12 @@
+version: '2.3'
+services:
+  grafana:
+    image: 'grafana/grafana:5.1.0'
+    container_name: grafana
+    volumes:
+     - grafana_data:/var/lib/grafana
+    restart: always
+    network_mode: host
+
+volumes:
+    grafana_data:
